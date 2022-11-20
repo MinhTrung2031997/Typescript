@@ -22,3 +22,13 @@ const growOld = person.growOld;
 growOld();
 console.log(person.getAge());
 console.log(person.age);
+
+const changepass = false;
+
+function checkChangePass() {
+  if (!changepass) {
+    console.log("Aaaaa");
+  }
+}
+
+checkChangePass();
