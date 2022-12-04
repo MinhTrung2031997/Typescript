@@ -21,6 +21,14 @@ const personResponse = {
 
 type PersonResponse = typeof personResponse;
 
-function processResponse(person: PersonResponse) {
+function processResponse(person: Partial<PersonResponse>) {
   console.log(`${person.firstName} ${person.lastName}`);
 }
+
+
+const person = {
+  firstName: "trung",
+  lastName: "Nguyen"
+}
+
+const res = processResponse(person)
